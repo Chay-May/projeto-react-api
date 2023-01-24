@@ -4,7 +4,8 @@ export const CardContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(440px, 1fr));
   justify-items: center;
-  background-color:  #DDDDDD;`
+  /* background-color:  #DDDDDD; */
+  `
 ;
 
 export const Texto = styled.h1`
