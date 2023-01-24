@@ -1,10 +1,9 @@
 import React from 'react'
 import { Container, DetalsButton, Pokeball, Pokemon, PokemonName, PokemonNumber, TypesContainer, CatchButton } from './style'
 
-const PokemonCard = () => {
+export default function PokemonCard ()  {
   return (
     <div>
-        <p>PokemonCard</p>
     <Container>
       <div>
         <PokemonNumber>id</PokemonNumber>
@@ -25,4 +24,3 @@ const PokemonCard = () => {
   )
 }
 
-export default PokemonCard

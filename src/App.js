@@ -1,14 +1,9 @@
-
-import Router from "./Router/Router";
-
-
+import Router from "./router/Router";
 
 function App() {
   return (
     <div>
-        
-        <Router />
-      
+        <Router/>
     </div>
   );
 }

@@ -1,14 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from '../../Header/Header'
 import PokemonCard from '../../PokemonCard/PokemonCard'
-import {useNavigate} from 'react-router-dom'
 import { CardContainer, Texto } from './PokedexStyle'
 
-const PokedexPages = () => {
+export default function PokedexPages () {
 
-const navigate = useNavigate ()
+// const navigate = useNavigate ()
 
-const [dados, setDados] = [
+const [dados, setDados] = useState([
 {nome: "chayrizard", poder: "fogo"},
 {nome: "chayrizard", poder: "fogo"},
 {nome: "chayrizard", poder: "fogo"},
@@ -29,7 +28,7 @@ const [dados, setDados] = [
 {nome: "chayrizard", poder: "fogo"},
 {nome: "chayrizard", poder: "fogo"},
 {nome: "chayrizard", poder: "fogo"}
-]
+])
 
   return (
     
@@ -37,16 +36,14 @@ const [dados, setDados] = [
         
         <Header/>
 
-      <Texto>PokedexPages</Texto>  
+      <Texto>PokedexPages</Texto> 
+   
 
         <CardContainer>
-            {dados.map(()=>{
-                    return <PokemonCard/>;
-                })
-            }
+
+        {dados.map(()=>{return <PokemonCard/>})} 
         </CardContainer>
     </div>
   )
 }
 
-export default PokedexPages;
