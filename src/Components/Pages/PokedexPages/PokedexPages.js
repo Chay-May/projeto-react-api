@@ -6,45 +6,45 @@ import { CardContainer, Texto } from './PokedexStyle'
 
 const PokedexPages = () => {
 
-const navigate = useNavigate ()
+// const navigate = useNavigate ()
 
-const [dados, setDados] = [
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"},
-{nome: "chayrizard", poder: "fogo"}
-]
+// const [dados, setDados] = [
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"},
+// {nome: "chayrizard", poder: "fogo"}
+// ]
 
   return (
     
     <div>
         
-        <Header/>
+        {/* <Header/> */}
 
       <Texto>PokedexPages</Texto>  
 
-        <CardContainer>
+        {/* <CardContainer>
             {dados.map(()=>{
                     return <PokemonCard/>;
                 })
             }
-        </CardContainer>
+        </CardContainer> */}
     </div>
   )
 }

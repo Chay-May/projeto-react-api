@@ -1,11 +1,11 @@
-export const goToHome = (navigate) => {
-    navigate("/");
-  };
+// export const goToHome = (navigate) => {
+//     navigate("/");
+//   };
 
-  export const goToList = (navigate) => {
-    navigate("/List");
-  };
+//   export const goToList = (navigate) => {
+//     navigate("/list");
+//   };
 
-  export const goToDetails = (navigate) => {
-    navigate("/Details");
-  };
+//   export const goToDetails = (navigate) => {
+//     navigate("/details");
+//   };

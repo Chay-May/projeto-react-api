@@ -9,9 +9,9 @@ const Router = () => {
 
   <Routes>
 
-  <Route  path="/" element={<PokedexPages />} />
-  <Route  path="/List" element={<PokemonsListPages />} />
-  <Route  path="/Details" element={<PokemonsDetailsPage />} />
+  <Route  index element={<PokedexPages />} />
+  <Route  path="/list" element={<PokemonsListPages />} />
+  <Route  path="/details" element={<PokemonsDetailsPage />} />
 
   </Routes>
   
