@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 
 export const StyledImg = styled.img `
-height: 120px;
+height: 100px;
 `
 
 export const Space = styled.img `
@@ -13,6 +13,7 @@ export const StyledHeader = styled.header `
 display: flex;
 justify-content: space-between;
 align-items: center;
+z-index: 2 !important;
 `
 export const HeaderButton = styled.button
   `display: flex;

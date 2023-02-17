@@ -16,9 +16,9 @@ const Header = () => {
         return (
           <>
             <StyledHeader>
-            <Space></Space>
-              <StyledImg alt="logo pokemon" src={logo} />
               <button onClick={() => goToList(navigate)}>Pokédex</button>
+              <StyledImg alt="logo pokemon" src={logo} />
+            <Space></Space>
             </StyledHeader>
           </>
         );
@@ -38,7 +38,7 @@ const Header = () => {
         return (
           <>
             <StyledHeader>
-              <button onClick={goToList(navigate)}>Pokédex</button>
+              <button onClick={()=> goToList(navigate)}>Pokédex</button>
               <StyledImg alt="logo pokemon" src={logo} />
               <button onClick={() => goToHome(navigate)}>Todos Pókemons</button>
             </StyledHeader>

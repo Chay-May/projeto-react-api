@@ -1,57 +1,57 @@
 import styled from "styled-components";
 
-
-export const Container = styled.div
-  `padding: 16px;
-  min-width: 400px;
-  max-width: 440px;
+export const Container = styled.div`
+  padding: 16px;
+  min-width: 260px;
+  max-width: 250px;
   background-color: ${(props) => props.color};
   border-radius: 12px;
   display: flex;
   position: relative;
   margin: 30px 10px;
-  color: white;`
-;
+  color: white;
+`;
 
-export const PokemonNumber = styled.p
-`  font-family: "Inter", sans-serif;
+export const PokemonNumber = styled.p`
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-align: left;
-  text-shadow: 2px 2px black;`
-;
+  text-shadow: 2px 2px black;
+`;
 
-export const PokemonName = styled.h1
- `font-size: 32px;
-  width: 250px;
+export const PokemonName = styled.h1`
+  font-size: 25px;
+  z-index: 3 !important;
+  width: 200px;
   font-weight: 700;
   letter-spacing: 0em;
   text-align: left;
   margin-bottom: 10px;
-  text-shadow: 2px 2px black;`
-  
-;
+  text-shadow: 2px 2px black;
+  position: relative;
+`;
 
-export const PokemonType = styled.img
-`max-width: 100px;
+export const PokemonType = styled.img`
+  max-width: 100px;
   height: 32px;
   border-radius: 8px;
   overflow: hidden;
   border: 1px dashed #ffffff;
-  margin-right: 8px;`
-;
+  margin-right: 8px;
+`;
 
-export const TypesContainer = styled.div
- ` margin-bottom: 52px;`
-;
-export const Pokeball = styled.img
-`  position: absolute;
+export const TypesContainer = styled.div`
+  margin-bottom: 52px;
+`;
+export const Pokeball = styled.img`
+  position: absolute;
   top: 0;
-  right: 0;`
-;
+  right: 0;
+`;
 
-export const CatchButton = styled.button
-  `display: flex;
+export const CatchButton = styled.button`
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -66,19 +66,20 @@ export const CatchButton = styled.button
   bottom: 10px;
   right: 22px;
   z-index: 2;
-  color: ${(props) => props.colorText};`
-;
+  color: ${(props) => props.colorText};
+`;
 
-export const Pokemon = styled.img
-`width: 223px;
-height: 223px;
-position: absolute;
-top: -60px;
-right: 0;
-z-index: 2`;
+export const Pokemon = styled.img`
+  width: 223px;
+  height: 223px;
+  position: absolute;
+  top: -60px;
+  right: 0;
+  z-index: 2;
+`;
 
-export const ButtonDetails = styled.button
-  `border: none;
+export const ButtonDetails = styled.button`
+  border: none;
   background: none;
   text-decoration: underline;
   font-weight: 700;
@@ -86,11 +87,9 @@ export const ButtonDetails = styled.button
   line-height: normal;
   color: white;
   &:hover {
-    cursor: pointer;}`
-
-
-
-
+    cursor: pointer;
+  }
+`;
 
 // export const Container = styled.div
 //  `padding: 16px;

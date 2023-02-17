@@ -6,6 +6,7 @@ export const Container = styled.div`
   margin: 0 auto;
   height: 100vh;
   background-color: #5e5e5e;
+  
   h1 {
     color: white;
     font-size: 3rem;
@@ -16,8 +17,15 @@ export const Container = styled.div`
 `;
 
 export const CardDetails = styled.div`
-  width: 80vw;
-  height: 70vh;
+
+height: 450px;
+width: 900px;
+left: 0px;
+top: 0px;
+/* border-radius: 37.88571548461914px; */
+
+  /* width: 80vw;
+  height: 70vh; */
   margin: 0 auto;
   background-color: ${(props) => props.color};
   border-radius: 37.8857px;
@@ -83,6 +91,13 @@ export const ContainerRight = styled.div`
 export const DivInfos = styled.div`
   margin-top: 0.5vh;
   margin-left: 5vw;
+
+  height: 19px;
+width: 30px;
+left: 774px;
+top: 24px;
+border-radius: nullpx;
+
 `;
 
 export const DivMoves = styled.div`
@@ -122,10 +137,17 @@ export const DivTypes = styled.div`
 `;
 
 export const ImgPokemon = styled.img`
-  width: 250px;
-  height: 250px;
-  position: relative;
-  right: 236px;
-  left: 11px;
+  /* width: 250px;
+  height: 250px; */
+  position: absolute;
+  right: 100px;
+  /* left: 11px; */
   bottom: 70px;
+
+  height: 200px;
+width: 200px;
+top: 200px;
+border-radius: 0px;
+
+
 `;

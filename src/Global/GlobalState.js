@@ -31,14 +31,15 @@ const addPokedex = (pokemon)=>{
         const newPokedex = [...pokedex, pokemon]
         setPokedex(newPokedex)
     }
+    const removePokemonList = pokemonsName.filter((pokemonInList)=>pokemonInList.name !== pokemon.name)
+    setPokemonsName(removePokemonList)
+    console.log("addPokedex")
 }
 
 const removePokemon = (pokemonRemoved)=>{
     const newPokedex = pokedex.filter((pokemonInPokedex)=>pokemonInPokedex.name !== pokemonRemoved.name)
     setPokedex(newPokedex)
 }
-
-
 
 
 const inPokedex = (id) => {

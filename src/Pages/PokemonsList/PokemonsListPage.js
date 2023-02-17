@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import { CardContainer, Container, Texto } from "./PokemonsListStyle";
@@ -14,17 +14,25 @@ const PokemonsListPages = () => {
   const { pokemonsName } = context;
 
 
-  const listPokemon = pokemonsName.map((poke, index) => {
-    return <Details key={index} url={poke.url} />;
-  });
+
+  useEffect(()=>{
+  setPokemonsList(pokemonsName)
+  },[pokemonsName])
+
 
   return (
-    <Container>
-      {console.log(pokemonsName)}
+    <>
       <Header />
+    <Container>
       <h1>Todos Pokémons</h1>
-      <section>{listPokemon}</section>
+      <section>{
+       pokemonsList.map((poke, index) => {
+        return <Details key={index} url={poke.url} />;
+      })
+      }</section>
     </Container>
+    
+    </>
   );
 };
 
