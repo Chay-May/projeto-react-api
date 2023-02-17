@@ -39,6 +39,8 @@ const removePokemon = (pokemonRemoved)=>{
 }
 
 
+
+
 const inPokedex = (id) => {
     return pokedex.findIndex((p) => p.id === id) === -1;
   }

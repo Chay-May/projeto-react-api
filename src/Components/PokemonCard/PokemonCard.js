@@ -27,21 +27,36 @@ const PokemonCard = ({
   img,
   cardColors,
 }) => {
-
   const navigate = useNavigate();
   const location = useLocation();
   const context = useContext(GlobalContext);
-  const {addPokedex, removePokedex, inPokedex} = context;
+  const { addPokedex, removePokedex, inPokedex } = context;
 
-  const changeButton = ()=>{
-if (inPokedex(id)) {
-  return (<CatchButton onClick={()=>{addPokedex(currentPoke)}}>Capturar!</CatchButton>)
-} else {
-  return  (<CatchButton color="#FF6262" colorText={"White"} onClick={()=>{removePokedex(currentPoke)}}>
-  Remover da Pokedex!
-</CatchButton>)
-}
-  }
+  const changeButton = () => {
+    if (inPokedex(id)) {
+      return (
+        <CatchButton
+          onClick={() => {
+            addPokedex(currentPoke);
+          }}
+        >
+          Capturar!
+        </CatchButton>
+      );
+    } else {
+      return (
+        <CatchButton
+          color="#FF6262"
+          colorText={"White"}
+          onClick={() => {
+            removePokedex(currentPoke);
+          }}
+        >
+          Remover da Pokedex!
+        </CatchButton>
+      );
+    }
+  };
 
   return (
     <Container color={cardColors}>
@@ -58,7 +73,9 @@ if (inPokedex(id)) {
             <PokemonType src={getTypes(type1)} />
           )}
         </TypesContainer>
-        <ButtonDetails onClick={()=>goToDetails(navigate, name)}>Detalhes</ButtonDetails>
+        <ButtonDetails onClick={() => goToDetails(navigate, name)}>
+          Detalhes
+        </ButtonDetails>
       </div>
       <div>
         <Pokemon src={img} alt="" />
